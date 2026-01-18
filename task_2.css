@@ -1,0 +1,97 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #868c9f;
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.highlight {
+    color: #fa1515;
+}
+
+.navbar {
+    background-color: #111827;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 1rem;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: #facc15;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+.blog-post {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+.post-content{
+    color: #1e3a8a;
+    padding: 1.5rem;
+}
+
+.code {
+    background-color: #e5e7eb;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.comments {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.site-footer {
+    text-align: center;
+    background-color: #111827;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar li {
+        margin: 0.5rem 0;
+    }
+}
