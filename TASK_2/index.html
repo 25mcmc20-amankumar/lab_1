@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Coding blog sharing thoughts on web development, technology, and design.">
+    <meta name="keywords" content="blog, web development, HTML5, CSS, programming">
+    <meta name="author" content="Aman Kumar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Coding with Ak Blog</title>
+
+    <!-- // when preconnect is used then connection is already ready. it means faster rendering. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- // cross origin is required because fonts are loaded from a different origin (google font api) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- //select poppins font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="task_2.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Coding with Ak Blog</h1>
+        <p>Thoughts on <span class="highlight">Web Development</span> & Design</p>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- //Main content of page -->
+    <main class="container">
+        <article class="blog-post">
+            <h2>Getting Started with HTML5 & CSS</h2>
+            <p class="post-meta">Published on <span style="color: red;">January 15, 2026</span></p>
+
+            <div class="post-content">
+                <p>
+                    Here to Learn Html 5 ,css and JavaScript, Html means Hyper text markup language
+                </p>
+
+                <p>
+                    Using semantic elements like <span class="code">article</span> and
+                    <span class="code">section</span> improves accessibility.
+                </p>
+            </div>
+        </article>
+
+        <article class="blog-post">
+            <h2>----------Task 2 -----</h2>
+            <p class="post-meta">Published on <span style="color: red;">January 15, 2026</span></p>
+
+            <div class="post-content">
+                <p>
+                    #2 Styling and Web Publishing
+                    Objective: Combine knowledge of HTML5, CSS, and web publishing to create and publish a personal
+                    blog.
+                    Task: Design a blog page using HTML5, implementing all necessary HTML tags, including
+                <div> and
+                    <span> for styling. Use an External CSS stylesheet to manage the styles, including text formatting,
+                        color
+                        properties, and responsive design.
+                        • Incorporate a custom color scheme and font choices using Google Fonts.
+                        • Publish the blog on a free hosting service like GitHub Pages or Netlify, ensuring it adheres
+                        to W3C
+                        web standards.
+                        • Extend the project by adding a commenting system using a third-party service like Disqus and
+                        ensure your blog is SEO-friendly.
+                        </p>
+
+                        <p>
+                            Using semantic elements like <span class="code">article</span> and
+                            <span class="code">section</span> improves accessibility and SEO.
+                        </p>
+                </div>
+        </article>
+        <div class="comments">
+            <h3>Comments</h3>
+            <div id="disqus_thread"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Aman Kumar Built with HTML5 & CSS</p>
+    </footer>
+
+    <!-- //discuss script -->
+    <script>
+        var disqus_config = function () {
+            this.page.url = window.location.href;
+            this.page.identifier = "Coding with Ak blog";
+        };
+
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://codingwithak.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+</body>
+
+</html>
